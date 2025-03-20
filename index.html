@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="./dist/images/Logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/output.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Shrimp Zone Resturant Website UI Template</title>
+</head>
+
+<style>
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F8E5C3;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E04E1E;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #090F1B;
+  }
+</style>
+
+<body>
+  <!-- start Header -->
+  <div class="header container mx-auto p-6">
+    <div class="flex items-center justify-between">
+      <div class="logo">
+        <img class="w-[120px]" src="./dist/images/Logo.png" alt="" />
+      </div>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a class="py-2 px-6 rounded-full bg-[#F25D26] text-white text-[20px] font-medium hover:bg-[#090F1B]"
+          href="#">Home</a>
+        <a class="hover:text-[#F25D26] text-[20px] text-[#090F1B] font-medium" href="#about">About Us</a>
+        <a class="hover:text-[#F25D26] text-[20px] text-[#090F1B] font-medium" href="#menu">Menu</a>
+        <a class="hover:text-[#F25D26] text-[20px] font-medium" href="#contact">Contact Us</a>
+      </div>
+      <button id="mobile-btn" class="md:hidden text-[#090F1B] ">
+        <i class="fa-solid fa-bars text-3xl  cursor-pointer"></i>
+      </button>
+    </div>
+    <div class="md:hidden">
+      <div id="mobile-menu"
+        class="absolute flex hidden flex-col items-center space-y-4 font-bold bg-[#FFF5E1] py-8 left-6 right-6 z-[5000]">
+        <a class="py-2 px-6 rounded-full bg-[#F25D26] text-white text-[20px] font-medium hover:bg-[#090F1B]"
+          href="#">Home</a>
+        <a class="hover:text-[#F25D26] text-[20px] text-[#090F1B] font-medium" href="#about">About Us</a>
+        <a class="hover:text-[#F25D26] text-[20px] text-[#090F1B] font-medium" href="#menu">Menu</a>
+        <a class="hover:text-[#F25D26] text-[20px] text-[#090F1B] font-medium" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  <!-- Start Section -->
+  <section id="hero">
+    <div class="container flex flex-col-reverse md:flex-row mx-auto px-6 space-x-6 gap-0 md:gap-[10px] lg:gap-[250px]">
+      <div class="md:w-1/2 flex flex-col justify-center gap-5 text-center md:text-left">
+        <h1 class="font-bold text-3xl md:text-5xl text-[#090F1B] mb-3">
+          Delicious Seafood, Fresh Every Day!
+        </h1>
+        <p class="mb-3">
+          Enjoy the finest shrimp and seafood dishes, freshly prepared to give
+          you an unforgettable dining experience
+        </p>
+        <a class="self-center md:self-start py-2 px-6 rounded-full bg-[#F25D26] text-white text-[20px] font-medium hover:bg-[#090F1B]"
+          href="#menu">Explore Our Menu</a>
+      </div>
+      <div class="w-[450px] md:w-1/2 ml-[auto] mr-[auto] md:ml-[0] md:mr-[0]">
+        <img id="shrimp-img" src="./dist/images/deliciously-grilled-shrimp-with-lemon-herbs-transparent-background.png"
+          alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  <!-- Start About Us -->
+  <div class="about-us py-[20px]" id="about">
+    <div class="mx-auto my-20 text-center">
+      <h2 class="font-bold text-3xl md:text-5xl text-[#090F1B] mb-[50px]">
+        About Us
+      </h2>
+      <div
+        class="container flex flex-col-reverse lg:flex-row mx-auto px-6 space-x-6 gap-0 lg:gap-[70px] xl:gap-[250px]">
+        <div class="w-full lg:w-1/2">
+          <p class="text-center md:text-left text-[18px]/[1.5] font-medium">
+            Shrimp Zone is a seafood restaurant known for its delicious and
+            fresh seafood offerings, with a special focus on shrimp. The
+            restaurant prides itself on using high-quality ingredients and
+            serving a variety of seafood dishes, from perfectly grilled shrimp
+            to seafood platters that cater to every taste. With a commitment
+            to providing an exceptional dining experience, Shrimp Zone has
+            become a popular destination for seafood lovers, offering both
+            mouthwatering dishes and a welcoming, friendly atmosphere. The
+            restaurant is owned by Hany Food, an Egyptian blogger known for
+            his passion for food and culinary experiences. Hany’s love for
+            seafood and his expertise in the food industry have shaped the
+            restaurant’s unique concept. Under his leadership, Shrimp Zone
+            continues to grow and delight customers with its authentic flavors
+            and excellent service. Hany’s vision is to provide a memorable
+            dining experience that keeps customers coming back for more,
+            ensuring that each visit is as satisfying as the last.
+          </p>
+        </div>
+        <div
+          class="w-[350px] lg:w-1/2 ml-[auto] mr-[auto] lg:ml-[0] lg:mr-[0] mb-[55px] lg:mb-[0] relative before:hidden before:lg:block before:content-[' '] before:absolute before:w-[100%] before:h-[100%] before:bg-[#F25D26] before:left-[-50px] before:rounded-[70px] before:top-[35px]">
+          <img class="w-[450px] ml-[auto] mr-[auto] md:ml-[0] md:mr-[0] rounded-[70px] relative"
+            src="./dist/images/grilled-fish-with-vegetable-salad-onion-sumac-sprinkles_140725-10554.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About Us -->
+  <!-- Start Menu -->
+  <div class="menu py-[20px] bg-[#FFF5E1]" id="menu">
+    <div class="container mx-auto my-20">
+      <h2 class="font-bold text-3xl md:text-5xl text-[#090F1B] mb-[50px] text-center">
+        Our Special Menu
+      </h2>
+      <div class="text-center my-4">
+        <input type="text" id="searchInput" placeholder="Search for a dish..."
+          class="border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-orange-500 transition duration-300">
+      </div>
+      <div class="menu-items flex flex-col lg:flex-row justify-center items-center">
+        <div class="menu-items-left">
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Grilled Shrimp.jpg" alt="Grilled Shrimp" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Grilled Shrimp
+                <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">550 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Fried Shrimp.jpg" alt="Fried Shrimp" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Fried Shrimp<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">500 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Fried Calamari.jpg" alt="Fried Calamari" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Fried Calamari
+                <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">450 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Shrimp Pasta.jpg" alt="Shrimp Pasta" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Shrimp Pasta<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">400 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Fried Fish.jpg" alt="Fried Fish" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Fried Fish<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">350 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Grilled Salmon.jpg" alt="Grilled Salmon" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Grilled Salmon<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">600
+                  EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items-right">
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Spicy Crab.jpg" alt="Spicy Crab" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Spicy Crab<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">500 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Seafood Paella.jpg" alt="Seafood Paella" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Seafood Paella<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">550
+                  EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Spicy Octopus.jpg" alt="Spicy Octopus" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Spicy Octopus<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">600
+                  EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Mussels.jpg" alt="Mussels" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Mussels<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">450 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Shrimp and Avocado Salad.jpg"
+              alt="Shrimp and Avocado Salad" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Shrimp and Avocado Salad<span
+                  class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">400 EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item flex justify-center items-center m-[40px]">
+            <img class="w-20 h-20 rounded-full mr-[40px]" src="./dist/images/Seafood Risotto.jpg"
+              alt="Seafood Risotto" />
+            <div>
+              <h3
+                class="text-[#090f1b] lg:text-[20px] md:text-[19px] font-semibold uppercase relative border-b-[2px] border-dashed border-[#333] pb-2">
+                Seafood Risotto<span class="absolute top-0 right-0 bg-orange-500 text-white px-3 rounded-md">500
+                  EGP</span>
+              </h3>
+              <p class="italic text-gray-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, expedita.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Menu -->
+  <!-- Start Contact Us -->
+  <div class="contact-us py-[20px] bg-[#152437]" id="contact">
+    <div class="container mx-auto my-10">
+      <div
+        class="contact-content flex flex-col lg:flex-row justify-evenly items-center text-center md:text-center lg:text-left">
+        <div class="contact-info">
+          <div class="my-[20px] leading-[1.7]">
+            <h3 class="text-[27px] text-[#FDF1E6] font-bold uppercase mb-[10px]">
+              Address
+            </h3>
+            <p class="text-[#C0C0C0]">
+              <i class="fa-solid fa-location-dot text-[#F25D26] mr-[7px]"></i>Sheraton Al Matar, El Nozha, Egypt
+            </p>
+            <p class="text-[#C0C0C0]">
+              <i class="fa-solid fa-phone text-[#F25D26] mr-[7px]"></i>Phone:
+              01008026075
+            </p>
+            <p class="text-[#C0C0C0]">
+              <i class="fa-regular fa-envelope text-[#F25D26] mr-[7px]"></i>support@shrimpzone.com
+            </p>
+          </div>
+          <div class="my-[20px] leading-[1.7]">
+            <h3 class="text-[27px] text-[#FDF1E6] font-medium uppercase mb-[10px]">
+              Working Hours
+            </h3>
+            <p class="text-[#C0C0C0]">8:00 am to 11:00pm on weekdays</p>
+            <p class="text-[#C0C0C0]">11:00 am to 11:00pm on weekends</p>
+          </div>
+          <div class="my-[20px] leading-[1.7]">
+            <h3 class="text-[27px] text-[#FDF1E6] font-medium uppercase mb-[10px]">
+              Follow Us
+            </h3>
+            <a href="#"><i
+                class="fa-brands fa-facebook-f text-white hover:text-gray-600 bg-gray-600 hover:bg-[#F25D26] mr-[5px] p-[15px] text-[20px] rounded-full"></i></a>
+            <a href="#"><i
+                class="fa-brands fa-twitter text-white hover:text-gray-600 bg-gray-600 hover:bg-[#F25D26] mr-[5px] p-[15px] text-[20px] rounded-full"></i></a>
+            <a href="#"><i
+                class="fa-brands fa-instagram text-white hover:text-gray-600 bg-gray-600 hover:bg-[#F25D26] mr-[5px] p-[15px] text-[20px] rounded-full"></i></a>
+          </div>
+        </div>
+        <form class="w-1/2 p-5 space-y-4">
+          <input type="text" name="name" id="name" placeholder="Full Name" required
+            class="bg-white border border-gray-400 p-3 w-full text-black focus:outline-none focus:ring-2 focus:ring-[#F25D26]" />
+
+          <input type="email" name="email" id="email" placeholder="Email Address" required
+            class="bg-white border border-gray-400 p-3 w-full text-black focus:outline-none focus:ring-2 focus:ring-[#F25D26]" />
+
+          <input type="text" name="Subject" id="Subject" placeholder="Subject" required
+            class="bg-white border border-gray-400 p-3 w-full text-black focus:outline-none focus:ring-2 focus:ring-[#F25D26]" />
+
+          <textarea name="Message" id="Message" cols="30" rows="5" placeholder="Message"
+            class="bg-white border border-gray-400 p-3 w-full text-black focus:outline-none focus:ring-2 focus:ring-[#F25D26]"></textarea>
+          <button type="submit"
+            class="btn self-center md:self-start py-2 px-6 rounded-full bg-[#F25D26] text-white text-[15px] font-medium hover:bg-[#090F1B]">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Us -->
+  <script src="./dist/js/script.js"></script>
+</body>
+
+</html>
